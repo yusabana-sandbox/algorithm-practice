@@ -4,8 +4,9 @@ require 'awesome_print'
 
 class InsertSort
   def sort(list)
+    tmp_list = list.dup
     sorted = []
-    while target = list.shift
+    while target = tmp_list.shift
       sorted << target and next if sorted.empty?
       if idx = sorted.find_index{|o| target.age < o.age }
         sorted.insert(idx, target)

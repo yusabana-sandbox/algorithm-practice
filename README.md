@@ -18,7 +18,12 @@
 * [スタック](https://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%BF%E3%83%83%E3%82%AF)
 * [キュー](https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%A5%E3%83%BC_(%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF))
 
+## キャッシュの仕組み
 
+* コンシステントハッシュ
+    * [スマートな分散で快適キャッシュライフ - mixi engineer blog](http://alpha.mixi.co.jp/entry/2008/10691/)
+    * [PerlからMemcachedを使う(Cache::Memcached::Fast) - 車輪を再発明 / koba04の日記](http://d.hatena.ne.jp/koba04/20110212/1297446296)
+    * http://search.cpan.org/dist/Cache-Memcached-Fast/lib/Cache/Memcached/Fast.pm
 
 
 ## フィルタとか木構造とか（Parser）

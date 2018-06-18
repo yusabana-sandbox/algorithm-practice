@@ -47,6 +47,38 @@ class BubbleSort
     res.unshift bubbling.call(tmp) until tmp.empty?
     res
   end
+
+  def bsort(a)
+    dup = a.dup
+    l = dup.size
+
+    # index が 1 始まり -1 したものと比較する
+    for i in 1..l do
+      for j in 1..(l-i) do
+        if dup[j - 1].age > dup[j].age
+          t = dup[j]
+          dup[j] = dup[j - 1]
+          dup[j - 1] = t
+        end
+      end
+    end
+
+    # index が 0始まり +1 したものと比較する
+    # for i in 0..l do
+    #   for j in 0..(l-i) do
+    #     p dup.map(&:age)
+    #     ap dup[j]
+    #     next unless dup[j + 1]
+    #     if dup[j].age > dup[j + 1].age 
+    #       t = dup[j]
+    #       dup[j] = dup[j + 1]
+    #       dup[j + 1] = t
+    #     end
+    #   end
+    # end
+
+    return dup
+  end
 end
 
 
@@ -67,4 +99,5 @@ if __FILE__ == $0
 
   ap BubbleSort.new.sort(users).map(&:age)
   ap BubbleSort.new.reference_sort(users).map(&:age)
+  ap BubbleSort.new.bsort(users).map(&:age)
 end

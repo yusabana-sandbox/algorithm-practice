@@ -3,6 +3,7 @@ require 'pry-doc'
 require 'awesome_print'
 
 class BubbleSort
+  # これはちょっとバブルソートではない
   def sort(list)
     tmp_list = list.dup
     max_idx = tmp_list.size - 1

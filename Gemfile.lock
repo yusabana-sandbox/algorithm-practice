@@ -16,7 +16,7 @@ GEM
       pry (~> 0.9)
       yard (~> 0.8)
     slop (3.6.0)
-    yard (0.9.5)
+    yard (0.9.25)
 
 PLATFORMS
   ruby
